@@ -1,8 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Movie } from '../../models/movie';
+import { IMAGES_SIZES } from '../../constants/imagesSizes';
 
 @Component({
   selector: 'item',
   templateUrl: './item.component.html',
   styleUrls: ['./item.component.scss']
 })
-export class ItemComponent {}
+export class ItemComponent implements OnInit {
+  @Input() itemData: Movie | null = null;
+
+  imagesSizes = IMAGES_SIZES;
+
+  constructor() {}
+  ngOnInit(): void {}
+}
