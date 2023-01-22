@@ -43,8 +43,8 @@
     }
     &-pane {
       position: absolute;
-      width: 45%;
-      top: 5rem;
+      width: 55%;
+      top: 1rem;
       left: 1rem;
 
       .name {
@@ -60,8 +60,8 @@
           > span {
             &:not(:last-child):after {
               content: '|';
-              margin-right: 9px;
-              margin-left: 9px;
+              margin-right: 4px;
+              margin-left: 4px;
             }
           }
 
